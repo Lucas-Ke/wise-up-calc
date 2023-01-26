@@ -7,6 +7,17 @@
 script{
     display: none;
 }
+p{
+    resize: none;
+    padding: 0px;
+    font-size: xx-large;
+    height: 75px;
+    border: 2px black solid;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 textarea{
     resize: none;
     padding: 0px;
@@ -15,23 +26,23 @@ textarea{
     border: 2px black solid;
     border-radius: 5px;
 }
-textarea:first-of-type{
+p:first-of-type, textarea:first-of-type{
     width: 12%;
     background-color: red; 
 }
-textarea:nth-of-type(2){
+p:nth-of-type(2), textarea:nth-of-type(2){
     width: 40%;
     background-color: blue; 
 }
-textarea:nth-of-type(3){
+p:nth-of-type(3), textarea:nth-of-type(3){
     width: 20%;
     background-color: green; 
 }
-textarea:nth-of-type(4){
+p:nth-of-type(4), textarea:nth-of-type(4){
     width: 20%;
     background-color: purple; 
 }
-body>div>textarea{
+body>div>p, body>div>textarea{
     margin: 1% 1%;
 }
 div{
@@ -39,5 +50,5 @@ div{
     width: 100%;
 }
 .zero>textarea{
-    width: 30%;
+    width: 45%;
 }
