@@ -1,0 +1,43 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getOption() {
+        var obj = document.getElementById("weSelect");
+        document.getElementById("demo").innerHTML =
+          obj.options[obj.selectedIndex].text;
+      }
+      function noOption() {
+        var obj = document.getElementById("mySelect");
+        document.getElementById("demo").innerHTML =
+          obj.options[obj.selectedIndex].text;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      Select your favorite fruit:
+      <select id="mySelect">
+        <option>2</option>
+        <option>4</option>
+        <option>6</option>
+        <option>8</option>
+      </select>
+      <select id="weSelect">
+        <option>Aa</option>
+        <option>Bb</option>
+        <option>Cc</option>
+        <option>Dd</option>
+      </select>
+      <br /><br />
+      <input
+        type="button"
+        onclick="getOption()"
+        onclick="noOption()"
+        value="Click Me!"
+      />
+    </form>
+
+    <p id="demo">we</p>
+  </body>
+</html>
