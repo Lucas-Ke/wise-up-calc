@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <span> <input type="number" id="SUS" /> </span>
+    <input type="button" onclick="Calculate()" value="Calculate" />
+
+    <script>
+      function Calculate() {
+        var P_zero = parseInt(document.getElementById("SUS").value);
+        console.log(typeof P_zero);
+        var P_one = P_zero / 12;
+        var P_two = P_one * 0.12;
+        var P_three = P_one * 0.07;
+        var P_four = P_one * 0.062;
+        var P_five = P_one * 0.0145;
+        var P_six = P_one * 0.01;
+        var P_seven = P_one * 0.05;
+        var P_eight = 180;
+        var P_nine =
+          P_two + P_three + P_four + P_five + P_six + P_seven + P_eight;
+        var P_ten = P_one - P_nine;
+        var P_house = P_one / 3;
+        document.getElementById("YT").innerHTML = P_zero;
+        document.getElementById("GM").innerHTML = P_one;
+        document.getElementById("FT").innerHTML = P_two;
+        document.getElementById("ST").innerHTML = P_three;
+        document.getElementById("SS").innerHTML = P_four;
+        document.getElementById("MT").innerHTML = P_five;
+        document.getElementById("SD").innerHTML = P_six;
+        document.getElementById("RI").innerHTML = P_seven;
+        document.getElementById("MI").innerHTML = P_eight;
+        document.getElementById("TD").innerHTML = P_nine;
+        document.getElementById("TB").innerHTML = P_ten;
+        document.getElementById("HOME").innerHTML = P_house;
+      }
+    </script>
+
+    <p id="YT"></p>
+    <p id="GM"></p>
+    <p id="FT"></p>
+    <p id="ST"></p>
+    <p id="SS"></p>
+    <p id="MT"></p>
+    <p id="SD"></p>
+    <p id="RI"></p>
+    <p id="MI"></p>
+    <p id="TD"></p>
+    <p id="TB"></p>
+    <p id="HOME"></p>
+  </body>
+</html>
