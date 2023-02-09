@@ -3,9 +3,9 @@
     background-color: ghostwhite;
 }
 .hero{
-    width: 100%;
-    height: 100px;
-    background-color: ghostwhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .green{
     height: 1100px;
@@ -16,4 +16,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.gren{
+    height: 1100px;
+    width: 30%;
+    background-color: green;
 }
