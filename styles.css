@@ -18,7 +18,12 @@
     justify-content: space-around;
 }
 .gren{
-    height: 100px;
+    height: 50px;
     width: 30%;
+    background-color: green;
+}
+.img {
+    display: flex;
+    justify-content: center;
     background-color: green;
 }
