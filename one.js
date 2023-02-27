@@ -41,13 +41,33 @@ function Calculate() {
 }
 // var P_ten = document.getElementById("TB").innerHTML
 function Calc2() {
-  if (document.getElementById("NegOrNot").innerHTML == 'loss') {
-    var P_eleven = parseInt(document.getElementById("SUSSY").value * -1)
-    console.log('as')
-  } else if (document.getElementById("NegOrNot").innerHTML == 'gain') {
-    var P_eleven = parseInt(document.getElementById("SUSSY").value * 1)
-    console.log('sas')
-  }
-  var P_twelve = P_ten + P_eleven;
-  document.getElementById("TTT").innerHTML = '$'+P_twelve;
+  var TTT = document.getElementById("aaa").innerHTML + 
+  document.getElementById("bbb").innerHTML + 
+  document.getElementById("ccc").innerHTML + 
+  document.getElementById("ddd").innerHTML + 
+  document.getElementById("eee").innerHTML + 
+  document.getElementById("fff").innerHTML +
+  document.getElementById("ggg").innerHTML + 
+  document.getElementById("hhh").innerHTML + 
+  document.getElementById("iii").innerHTML + 
+  document.getElementById("jjj").innerHTML + 
+  document.getElementById("kkk").innerHTML +
+  document.getElementById("lll").innerHTML + 
+  document.getElementById("mmm").innerHTML + 
+  document.getElementById("nnn").innerHTML + 
+  document.getElementById("ooo").innerHTML + 
+  document.getElementById("ppp").innerHTML +
+  document.getElementById("qqq").innerHTML + 
+  document.getElementById("rrr").innerHTML + 
+  document.getElementById("sss").innerHTML + 
+  document.getElementById("zzz").innerHTML;
+  // if (document.getElementById("NegOrNot").innerHTML == 'loss') {
+  //   var P_eleven = parseInt(document.getElementById("SUSSY").value * -1)
+  //   console.log('as')
+  // } else if (document.getElementById("NegOrNot").innerHTML == 'gain') {
+  //   var P_eleven = parseInt(document.getElementById("SUSSY").value * 1)
+  //   console.log('sas')
+  // }
+  var P_twelve = P_ten;
+  document.getElementById("come").innerHTML = '$'+P_ten;
 }
